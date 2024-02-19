@@ -17,7 +17,7 @@ def different_indexes(timurs_string):
     dif_index=0
     main_string= "codeforces"
     for i in range(0,10):
-        if timurs_string[i] not in main_string[i]:
+        if timurs_string[i] != main_string[i]:
             dif_index+=1
         else:
             continue
