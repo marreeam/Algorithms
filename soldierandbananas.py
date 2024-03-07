@@ -31,8 +31,8 @@ def total_cost_of_bananas():
        
     print(f"full cost : {full_cost1}")
     return full_cost1
-total_cost = total_cost_of_bananas()
 
+total_cost = total_cost_of_bananas()
 
 
 # Function to calculate the amount of money the person needs to borrow.
