@@ -17,11 +17,11 @@ import random
 # The loop counts the number of years it takes for Limak to become equal to or heavier than Bob.
 
 def weights():
+    Limaks_weight,bobs_weight=int(input()).split()
     years=0
-    bobs_weight=random.randint(1,10)
-    print(bobs_weight)
-    Limaks_weight=random.randint(1,bobs_weight)
-    print(Limaks_weight)
+   
+   
+    
     while Limaks_weight<bobs_weight:
             Limaks_weight=Limaks_weight*3
             bobs_weight=bobs_weight*2

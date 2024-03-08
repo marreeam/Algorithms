@@ -14,8 +14,8 @@ import random
 # The total number of steps is then printed as the output.
 
 def reach_house_minimum_steps():
-    coordianions_of_friends_house=random.randint(1,10)
-    print(coordianions_of_friends_house)
+    coordianions_of_friends_house=int(input())
+    
     number_of_steps=0
     
     while coordianions_of_friends_house>=5:

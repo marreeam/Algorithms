@@ -7,7 +7,7 @@ import random
 
 number_of_stones = int(input())
 
-the_color_of_the_stones = input()
+the_color_of_the_stones = ["R", "G", "B"]
 the_row_of_colors = []
 
 # Function to randomly select colors for the stones
