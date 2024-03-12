@@ -6,20 +6,33 @@ row5 = list(map(int, input().split()))
 
 matrix = row1+ row2+ row3+ row4+ row5
 
+
 index = None
-indexes_to_be_perfext=2
+steps=0
 
 for i in range(len(matrix)):
-    if 1 in matrix[i]:
-        index = (i, matrix[i].index(1))
-        row_index, col_index = index
-        matrix[i] = [0] * len(matrix[i])
+     if matrix[i]==1:
+        index = matrix.index(1)
+       
+       
         
-        matrix[indexes_to_be_perfext][indexes_to_be_perfext] = 1
+        if index-12==10:
+            steps=2
+        if 12-index==5:
+            steps=2
+       
+        else:
+            steps=12-index
+            if steps<0:
+                steps=index-12
+        
 
         
+        
 
-print(index)
-print(matrix)
+
+
+
+print(steps)
 
 
